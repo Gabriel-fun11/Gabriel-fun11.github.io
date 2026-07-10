@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <link rel="shortcut icon" href="ICORussia.ico" type="image/x-icon">
+    <title>Gerador de questões</title>
+</head>
+<body>
+    
+    <nav id="Navegacao">
+        <li id="navHome" style="cursor: pointer;">Ínicio</li>
+        <li id="navQuestoes" style="cursor: pointer;">Questões</li>
+        <li id="navConteudos">Não sei o que colocar aqui</li>
+        <li id="navSobre">Sobre</li>
+    </nav>
+
+    <div id="TelaHome" class="tela">
+        <h2>Gerador de Simulado</h2>
+        <p>Utilizando do banco de questões baseado no livro da Javrónina "El Russo en Ejercicios" e no manual da Elena Vassina, gera um compilado de questões.</p>
+        <b>As questões não se repetem!</b>
+        <p>INFO: Não use esse site para entregar as suas atividades.</p>
+        
+        <div class="config-card">
+            <h3>Configurações do Simulado</h3>
+            <label for="inputQtdQuestoes">Enunciados a serem gerados:</label>
+            <input type="number" id="inputQtdQuestoes" value="3" min="1">
+            <br><br>
+            <label for="inputQtdItens">Questões por enunciado gerado:</label>
+            <input type="number" id="inputQtdItens" value="4" min="1">
+        </div>
+
+        <button id="btnGerar">Gerar Simulado Aleatório</button>
+        <button id="btnResetar">Resetar Progresso</button>
+    </div>
+
+    <div id="TelaQuestoes" class="tela" style="display: none;">
+        <h2>Seleção Manual de Questões</h2>
+        <div id="containerCheckboxes"></div>
+        <button id="btnGerarManual">Gerar PDF com Selecionadas</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
