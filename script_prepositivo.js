@@ -1,8 +1,8 @@
 const ARQUIVO_BANCO = 'banco_caso_prep.json';
 
 // Configurações padrão
-const QTD_QUESTOES_PADRAO = 10; 
-const QTD_ITENS_PADRAO = 2;    
+const QTD_QUESTOES_PADRAO = 5; 
+const QTD_ITENS_PADRAO = 7;    
 
 // ==========================================
 // FUNÇÕES AUXILIARES (Carregamento e Storage)
