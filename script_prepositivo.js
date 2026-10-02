@@ -1,8 +1,8 @@
 const ARQUIVO_BANCO = 'banco_caso_prep.json';
 
-// Configurações padrão
-const QTD_QUESTOES_PADRAO = 5; 
-const QTD_ITENS_PADRAO = 7;    
+// Pega os valores direto das caixas de texto do HTML
+const QTD_QUESTOES_PADRAO = parseInt(document.getElementById('inputQtdQuestoes').value) || 5;  // Enunciados
+const QTD_ITENS_PADRAO = parseInt(document.getElementById('inputQtdItens').value) || 7;        // Exs por enunciado
 
 // ==========================================
 // FUNÇÕES AUXILIARES (Carregamento e Storage)
@@ -248,24 +248,21 @@ if (btnResetarEl) {
         location.reload();
     });
 }
+
 // FUNçÔES
 
 function casos(){
-    window.location.href = "casos.html"
+    window.location.href = "./casos.html"
 }
 
 function cprep(){
-    window.location.href = "caso-prepositivo.html"
+    window.location.href = "./caso-prepositivo.html"
 }
 
 function inicio(){
-    window.location.href = "index.html"
+    window.location.href = "./index.html"
 }
 
 function oops(){
     alert("Em manutenção!")
-}
-
-function confirmar(){
-    confirm("Tem certeza que deseja baixar o gabarito?")
 }

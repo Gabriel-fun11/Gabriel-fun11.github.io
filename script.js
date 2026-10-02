@@ -278,11 +278,11 @@ function casos(){
 }
 
 function cprep(){
-    window.location.href = "caso-prepositivo.html"
+    window.location.href = "./caso-prepositivo.html"
 }
 
 function inicio(){
-    window.location.href = "index.html"
+    window.location.href = "./index.html"
 }
 
 function oops(){
