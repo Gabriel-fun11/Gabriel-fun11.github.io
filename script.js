@@ -274,7 +274,7 @@ document.getElementById('btnGerarManual').addEventListener('click', async () => 
 // FUNçÔES
 
 function casos(){
-    window.location.href = "casos.html"
+    window.location.href = "./casos.html"
 }
 
 function cprep(){
