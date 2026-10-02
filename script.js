@@ -270,3 +270,21 @@ document.getElementById('btnGerarManual').addEventListener('click', async () => 
     });
     await salvar_pdf(lista_gerada);
 });
+
+// FUNçÔES
+
+function casos(){
+    window.location.href = "casos.html"
+}
+
+function cprep(){
+    window.location.href = "caso-prepositivo.html"
+}
+
+function inicio(){
+    window.location.href = "index.html"
+}
+
+function oops(){
+    alert("Em manutenção!")
+}

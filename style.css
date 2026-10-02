@@ -46,7 +46,7 @@ body {
 }
 
 /* Botões (seguindo o vermelho do nav para manter harmonia) */
-button {
+button, a {
     background-color: #d52b1e;
     color: white;
     border: none;
@@ -56,10 +56,10 @@ button {
     margin: 10px;
     font-weight: bold;
     transition: 0.3s;
-
+    text-decoration: none
 }
 
-button:hover { background-color: #a02015; }
+button:hover, a:hover { background-color: #a02015; }
 
 /* Ajuste dos Assuntos na tela de Questões */
 .assunto-card {
@@ -94,4 +94,8 @@ input[type="number"] {
     width: 60px;
     font-size: 1em;
     margin-left: 10px;
+}
+
+li{
+    cursor: pointer
 }
